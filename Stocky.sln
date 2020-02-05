@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA662452-F388-4249-8CDD-C1250851D0D0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{419BDC8B-E6E7-4959-994F-0A4E6C19C10E}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\add_services.sh = scripts\add_services.sh
+		scripts\disable_services.sh = scripts\disable_services.sh
+		scripts\enable_services.sh = scripts\enable_services.sh
+		scripts\migrate.sh = scripts\migrate.sh
+		scripts\remove_services.sh = scripts\remove_services.sh
+		scripts\update.sh = scripts\update.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57524761-94A8-4361-AF8D-B6C17EF49819}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{1901E6E4-251F-4D39-B4AD-25FBEF8B3EF7}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\services\stocky.net.service = scripts\services\stocky.net.service
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stocky.Net", "src\Stocky.Net\Stocky.Net.csproj", "{D71B736B-4FA7-4B22-B0D0-BF93D1154C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D71B736B-4FA7-4B22-B0D0-BF93D1154C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D71B736B-4FA7-4B22-B0D0-BF93D1154C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D71B736B-4FA7-4B22-B0D0-BF93D1154C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D71B736B-4FA7-4B22-B0D0-BF93D1154C47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{419BDC8B-E6E7-4959-994F-0A4E6C19C10E} = {CA662452-F388-4249-8CDD-C1250851D0D0}
+		{57524761-94A8-4361-AF8D-B6C17EF49819} = {CA662452-F388-4249-8CDD-C1250851D0D0}
+		{1901E6E4-251F-4D39-B4AD-25FBEF8B3EF7} = {419BDC8B-E6E7-4959-994F-0A4E6C19C10E}
+		{D71B736B-4FA7-4B22-B0D0-BF93D1154C47} = {57524761-94A8-4361-AF8D-B6C17EF49819}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B260DD67-205B-4117-A912-324B7AAAD584}
+	EndGlobalSection
+EndGlobal

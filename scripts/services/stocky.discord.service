@@ -1,0 +1,16 @@
+[Unit]
+Description=Stocky.Discord
+
+[Service]
+WorkingDirectory=/var/dotnetcore/Stocky.Discord
+ExecStart=/usr/bin/dotnet /var/dotnetcore/Stocky.Discord/Stocky.Discord.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=stocky.discord
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+Environment=StockyDiscordToken=
+
+[Install]
+WantedBy=multi-user.target
